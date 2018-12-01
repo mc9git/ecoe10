@@ -1,0 +1,4 @@
+#Timezone Syn
+To ensure the clock synchronization all the machine must share the same time zone. In this case the America/Sao_Paulo timezone.
+
+$sudo timedatectl set-timezone America/Sao_Paulo
