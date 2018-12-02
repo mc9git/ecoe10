@@ -1,0 +1,41 @@
+#KDC Server Setup
+
+$ sudo apt-get install krb5-admin-server krb5-kdc
+
+#On the next 3 steps insert your real domain. For this homework it's: ECOE10.UNIFEI
+
+#Copy or modify the following files
+/etc/krb5.conf
+
+#After copy or modify the above files, execute:
+
+#For create your REALM
+$ krb5_newrealm 
+
+#For create your KDC users
+$ kadmin.local
+addprinc krbuser
+addprinc krbuser/admin
+exit
+
+$ kinit krbuser
+$ kilist
+
+#Copy or modify the following files
+/etc/krb5kdc/kadm5.acl
+
+#After copy of modify the above files, execute:
+$ kadmin.local
+addprinc -randkey host/sshserver.ecoe10.unifei
+ktadd -k /tmp/sshserver.ecoe10.unifei.keytab hots/sshserver.ecoe10.unifei
+exit
+
+#The generated file above msut be send to the SSHServer, you can do it using a tool such as scp
+$ scp /tmp/sshserver.ecoe10.unifei.keytab sshserver@sshserver.ecoe10.unifei:~/
+
+$ cp /tmp/sshserver.ecoe10.unifei.keytab /etc/krb5.keytab
+
+#Copy or modify the following files
+/etc/ssh/ssh_config
+
+
