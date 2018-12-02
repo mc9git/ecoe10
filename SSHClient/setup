@@ -1,0 +1,13 @@
+#Install the following package
+$ sudo apt-get install krb5-user
+
+#On the next 3 steps insert your real domain. For this homeork it's: ECOE10.UNIFEI
+
+#Copy or modify the follwing files
+/etc/krb5.conf
+
+#Execute
+$ kinit krbuser
+
+#Connect to the server
+ssh krbuser@sshserver.ecoe10.unifei
