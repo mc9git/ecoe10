@@ -1,9 +1,12 @@
 #Timezone Syn
 To ensure the clock synchronization all the machine must share the same time zone. 
-In this case the America/Sao_Paulo timezone.
-**$sudo timedatectl set-timezone America/Sao_Paulo**
+In this case, the America/Sao_Paulo timezone.
+
+$sudo timedatectl set-timezone America/Sao_Paulo
 
 #Commom user
 All the three machines must have one user in commom. To add a new user named krbuser on the system:
-**$sudo adduser krbuser**
+
+sudo adduser krbuser
+
 And complete the asked informations.
