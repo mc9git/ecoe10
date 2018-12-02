@@ -1,5 +1,5 @@
-#This file must placed at /etc/
-
+#Instead of using a complete DNS Server we're using the hosts file to create a IP-Hostname mapping at the local #network.
+#This file must placed at /etc/ on all machines of the homework.
 127.0.0.1	localhost
 
 # The following lines are desirable for IPv6 capable hosts
@@ -8,12 +8,12 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
 #KDC Server
-10.0.2.4	kdcserver.ecoe10.unifei
+10.0.2.4	kdcserver.ecoe10.unifei kdcserver
 
 #App Client	
-10.0.2.5	sshclient.ecoe10.unifei
+10.0.2.5	sshclient.ecoe10.unifei sshclient
 
 #App Server
-10.0.2.6	sshserver.ecoe10.unifei
+10.0.2.6	sshserver.ecoe10.unifei sshserver
 
 
