@@ -10,14 +10,14 @@
 # possible, but leave them commented.  Uncommented options override the
 # default value.
 
-#Port 22
+Port 22
 #AddressFamily any
 #ListenAddress 0.0.0.0
 #ListenAddress ::
 
-#HostKey /etc/ssh/ssh_host_rsa_key
-#HostKey /etc/ssh/ssh_host_ecdsa_key
-#HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
 
 # Ciphers and keying
 #RekeyLimit default none
@@ -61,14 +61,14 @@
 ChallengeResponseAuthentication no
 
 # Kerberos options
-#KerberosAuthentication no
+KerberosAuthentication yes
 #KerberosOrLocalPasswd yes
 #KerberosTicketCleanup yes
 #KerberosGetAFSToken no
 
 # GSSAPI options
-#GSSAPIAuthentication no
-#GSSAPICleanupCredentials yes
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials yes
 #GSSAPIStrictAcceptorCheck yes
 #GSSAPIKeyExchange no
 
