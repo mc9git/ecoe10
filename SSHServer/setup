@@ -1,0 +1,16 @@
+#Install the following packages
+$ sudo apt-get install openssh-server krb5-config
+
+#On the next 3 steps insert your real domain. For this homework it's: ECOE10.UNIFEI
+
+#Copy or modify the follwing files
+/etc/krb5.conf
+/etc/ssh/sshd_config
+
+#Change and copy the keytab file received from the KDCserver 
+$ chown sshserver.sshserver sshserver.ecoe10.unifei.keytab
+$ chmod 400 sshserver.ecoe10.unifei.keytab
+$ cp sshserver.ecoe10.unifei.keytab /etc/krb5.keytab
+
+#Restart the SSH Service
+$ sudo service ssh restart
