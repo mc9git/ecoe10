@@ -1,10 +1,14 @@
 # ECOE10
 OpenSSH Authentication through Kerberos.
 
-#Team
+# Team
 Ana Carolina de Campos, 34199
+
 Rafaela Thatiana Silva, 2017018022
+
 Ulysses Caetano Braga, 33195
+
+Renan Floriano Carvalho, 25204
 
 # Requirements 
 - 3 GNU/Linux machines with Kerberos 5 installed (preference for Ubuntu Server LTS 18.04 or Debian 9)
@@ -22,12 +26,15 @@ Ulysses Caetano Braga, 33195
 - Realm name: ECOE10.UNIFEI
 
 - KDC Server:  	host: kdcserver.ecoe10.unifei
+
 		network: 10.0.2.4/24
 
 - App Client:	host: sshclient.ecoe10.unifei
+
 		network: 10.0.2.5/24
 
 - App Server:	host: sshserver.ecoe10.unifei
+
 		network: 10.0.2.6/24 
 
 
