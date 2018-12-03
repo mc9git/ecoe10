@@ -39,3 +39,18 @@ Ulysses Caetano Braga, 33195
 - Commom user: 	krbuser
 
 *The environment should be changed according to the user's needs and preferences.
+
+# Proof of Concept (PoC)
+SSH Authentication through Kerberos [video](https://www.youtube.com/watch?v=g0WPpHPAV-0&feature=youtu.be).
+
+
+
+
+
+
+
+
+
+
+
+
